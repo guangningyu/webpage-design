@@ -1,0 +1,153 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* ----- header ----- */
+
+.header {
+  background-color: #333;
+}
+
+.header .nav {
+  list-style-type: none;
+  margin: 0; /* override user agent stylesheet */
+  padding: 20px 0;
+}
+
+.header .nav li {
+  color: #fff;
+  display: inline;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  margin-right: 25px;
+  text-transform: uppercase;
+}
+
+/* ----- jumbotron ----- */
+
+.jumbotron {
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/broadway/bg.png) no-repeat center center;
+  background-size: cover;
+  height: 800px;
+}
+
+.jumbotron .main {
+  position: relative;
+  top: 180px;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  text-transform: uppercase;
+  margin-top: 0; /* collapse margin so that the top space is removed */
+  margin-bottom: 80px;
+}
+
+@media (max-width: 500px) {
+  .jumbotron h1 {
+    font-size: 50px;
+    padding: 0 40px;
+  }
+}
+
+.jumbotron .btn-primary {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding: 16px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* ----- supporting ----- */
+
+.supporting {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.supporting .col {
+  float: left; /* display horizontally */
+  width: 33%; /* divided by three parts evenly */
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .supporting .col {
+    width: 100%;
+  }
+}
+
+.supporting img {
+  height: 32px;
+}
+
+.supporting h2 {
+  font-weight: 600;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.supporting p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 50px;
+  margin-bottom: 40px;
+}
+
+.supporting .btn-default {
+  border: 1px solid #333;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1.3px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block; /* avoid overlap when display vertically */
+  margin-bottom: 20px;
+}
+
+@media (min-width: 720px) {
+  .supporting .btn-default {
+    padding: 15px 50px;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* ----- footer ----- */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
